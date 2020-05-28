@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<head>
+    <title>LOGIN AND REGISTRATION</title>
+    <link rel="stylesheet" href="style4.css">
+</head>
+<body>
+    <div class="nav-container">
+        <div class="nav-content">
+        <!----logo image-->
+        <div class="icon">
+        <img src="images/main logo.png" height="60px" width="150px">
+        </div>
+        <!----menu-->
+        <div class="menu">
+        <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="menu.html">MENU</a></li>
+        <li><a href="login.html">SIGN UP</a></li>
+        <li><a href="contact.html">CONTACT US</a></li>
+        </ul>
+        </div>
+        <!----cart---->
+        <div class="cart">
+        <img src="images/cart.png">
+        <a href="cart1.html">CART</a>
+        </div>
+        </div>    
+        </div>
+    <div class="hero"> <!----container k bahr wali-->
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+              <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+              <button type="button" class="toggle-btn"onclick="signup()">Sign Up</button>
+            </div>
+            <div class="social-icons">
+                <img src="images/facebk-logo.png" height="45px" width="105px">
+                <img src="images/instagram-logo.png" height="35px">
+                <img src="images/twitter-logo.png" height="35px" width="45px">
+            </div>
+            <form id="login" class="input-group">
+                <input type="text" class-="input-field" placeholder="User Id"
+                required>
+                <input type="text" class-="input-field" placeholder="Enter Password"
+                required>
+                <br><br><input type="checkbox">Remember Password</span>
+                <br><br><button type="submit"class="submit-btn">Log In</button>
+            </form>
+            <form id="signup" class="input-group">
+                <input type="text" class-="input-field" placeholder="User Id"required>
+                <br><input type="text" class-="input-field" placeholder="Email Id"required>
+                <br><input type="text" class-="input-field" placeholder="Enter Password"required>
+                <!-- <input type="checkbox" class="checkbox"><span>I agree to terms & conditions</span> -->
+                <br><br><button type="submit"class="submit-btn">Sign Up</button>
+            </form>
+         
+        </div>
+</div> 
+    <script>
+        var x=document.getElementById("login");
+        var y=document.getElementById("signup");
+        var z=document.getElementById("btn");
+        function signup()
+        {
+            x.style.left="-400px";
+            y.style.left="50px";
+            z.style.left="50px";
+        }
+        function login()
+        {
+            x.style.left="50px";
+            y.style.left="450px";
+            z.style.left="0px";
+        }
+   
+    </script>
+    <!---------footer---->
+<div class="footer">
+    <div class="nav-content">
+        <!----logo image-->
+        <div class="icon">
+        <img src="images/main logo.png" height="60px" width="150px">
+        </div>
+        <!----menu-->
+        <div class="menu footer-menu">
+        <p>Terms & Conditions Apply and Follow us on....</p>
+        </div>
+        <!----cart---->
+        <div class="social">
+        <ul>
+        <li><a href="https://youtube.com" target="_blank"><img src="images/youtube-logo.png"></a></li>
+        <li><a href="https://facebook.com" target="_blank"><img src="images/facebook-logo.png"></a></li>
+        <li><a href="https://instagram.com" target="_blank"><img src="images/insta-logo.png"></a></li>
+        </ul> 
+        </div>
+        </div>   
+<div class="copyright">
+<p>copyright 2020 pizza Theme.Going-to internet</p>
+</div>
+</div>
+</body>
+</html>
